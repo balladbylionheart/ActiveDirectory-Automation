@@ -1,2 +1,1 @@
-# powershell-ad-user-creation
-Automate the creation of Active Directory (AD) user accounts with support for basic, detailed, and hybrid AD/O365 user creation. This project includes scripts for efficient and secure user provisioning in both cloud and hybrid environments.
+This repository contains PowerShell scripts that automate user creation for on-premises Active Directory (AD) and Azure AD hybrid environments. The project includes basic user creation, detailed user creation with extended attributes, and user creation for Office 365 hybrid configurations. These scripts are designed to reduce manual effort, enforce security best practices, and maintain consistency across user accounts.
