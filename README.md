@@ -1,15 +1,13 @@
-# PowerShell Scripts
+# PowerShell Scripts  
 By Helen Najar, Lionheart | Ballad by Dragons
 
-The **ActiveDirectory-Automation** repository contains modular PowerShell scripts for managing on-premises **Active Directory**. These tools help automate user creation, streamline account provisioning, and—soon—support de-provisioning for clean, auditable offboarding.
+The **ActiveDirectory-Automation** repository contains modular PowerShell scripts for managing on-premises **Active Directory**. These tools help automate user provisioning, streamline account creation, and enable secure, auditable **account termination**.
 
 This repo focuses on:
 
-* 🔄 **Automation** to eliminate repetitive tasks
-* 🔐 **Security-first scripting** practices
-* ♻️ **Modular, reusable design** for scalability
-
----
+* 🔄 **Automation** to eliminate repetitive tasks  
+* 🔐 **Security-first scripting** practices  
+* ♻️ **Modular, reusable design** for scalability  
 
 ## 📁 Directory Structure
 
@@ -17,18 +15,18 @@ This repo focuses on:
 ActiveDirectory-Automation/
 ├── AD-User-Creation/
 │   ├── AD-Creation-Basic/
-│   │   ├── ad-creation-basic.ps1
+│   │   ├── AD-Creation-Basic.ps1
 │   │   ├── README.md
 │   ├── AD-Creation-Detailed/
-│   │   ├── ad-creation-detailed.ps1
+│   │   ├── AD-Creation-Detailed.ps1
 │   │   ├── README.md
-├── AD-User-Termination/
-│   ├── (Coming Soon)
+├── AD-Termination-Basic/
+│   ├── AD-Termination-Basic.ps1
 │   ├── README.md
+├── .gitignore
+├── LICENSE
 └── README.md
-```
-
----
+````
 
 ## 🧭 Directory Breakdown
 
@@ -39,19 +37,26 @@ Scripts for provisioning user accounts in Active Directory.
 | **File/Folder**            | **Purpose**                                                      |
 | -------------------------- | ---------------------------------------------------------------- |
 | `AD-Creation-Basic.ps1`    | Streamlined account creation with basic attributes.              |
-| `AD-Creation-Detailed.ps1` | Full-featured account creation script with validation & logging. |
+| `AD-Creation-Detailed.ps1` | Full-featured account creation with validation & logging.        |
 | `README.md`                | Instructions and examples for usage.                             |
 
 ---
 
-### **2️⃣ AD-User-Termination**
+### **2️⃣ AD-Termination-Basic**
 
-A placeholder for **future scripts** that will automate the termination and cleanup of AD user accounts.
+A clean, on-premises–focused termination script that handles:
 
-> ⚠️ *Note: Hybrid termination scripts have been moved to the [`Exchange-Hybrid-Tools`](https://github.com/balladbydragons/Exchange-Hybrid-Tools) repository due to their dependency on Exchange Online.*
-> An on-prem–focused termination script is planned and will be added soon.
+- Account lookup with input validation  
+- Description tagging with ticket & timestamp  
+- Group membership removal  
+- Primary group reset  
+- Secure password reset  
+- OU relocation to disabled container  
+- Built-in prompts for audit screenshots
 
----
+This scroll is ideal for non-hybrid environments or where mailbox offboarding is managed elsewhere.
+
+> 🔁 Hybrid termination scripts are housed in the [`Exchange-Hybrid-Tools`](https://github.com/balladbydragons/Exchange-Hybrid-Tools) repository.
 
 ## 🛠️ How to Use
 
@@ -63,61 +68,46 @@ A placeholder for **future scripts** that will automate the termination and clea
    ```
 
 2. **Navigate to a specific script folder**
-   Each folder includes a `README.md` for instructions.
+   Each folder includes a `README.md` with usage steps.
 
 3. **Run the script**
-   Example:
-
    ```powershell
-   ./AD-User-Creation/AD-Creation-Basic/ad-creation-basic.ps1
+   ./AD-Termination-Basic/AD-Termination-Basic.ps1
    ```
+## Security Best Practices
 
----
+* Use `-WhatIf` to simulate actions when possible
+* Test in a dev/staging environment before prod use
+* Never hardcode credentials—prompt securely instead
+* Follow organizational audit/compliance policies
 
-## ✅ Security Best Practices
+## Contributing
 
-* Use `-WhatIf` to simulate script actions before applying.
-* Always test scripts in a dev environment.
-* Never hardcode credentials—prompt securely instead.
-* Review script logs where applicable.
+Want to contribute a scroll to the archive?
 
----
+* Match the existing folder structure
+* Keep logic modular and well-commented
+* Update or include `README.md` with usage examples
 
-## 🧩 Contributing
-
-You're welcome to contribute! If you have improvements or want to add scripts:
-
-* Follow the folder structure
-* Comment your logic clearly
-* Update the relevant `README.md`
-
----
-
-## 📦 Requirements
+## Requirements
 
 * PowerShell 7.x or Windows PowerShell 5.1+
 * ActiveDirectory PowerShell Module
 
-Install necessary module:
+Install module:
 
 ```powershell
 Install-Module -Name ActiveDirectory
 ```
-
----
-
 ## 📜 License
 
-This project is licensed under the [MIT License](https://github.com/balladbydragons/ActiveDirectory-Automation/blob/main/LICENSE.md).
+Licensed under the [MIT License](https://github.com/balladbydragons/ActiveDirectory-Automation/blob/main/LICENSE.md).
 
 Created and maintained by Helen Najar | Lionheart | [BalladByDragons.org](https://www.balladbydragons.org)
 
----
-
 ## 📬 Contact
-
-For inquiries, feedback, or collaboration opportunities:
+For questions, requests, or collaboration:
 
 * **LinkedIn**: [Helen Najar](https://www.linkedin.com/in/helen-najar)
-* **Website**: [BalladByDragons.org/contact](https://www.balladbydragons.org/contact)
+* **Website**: [balladbydragons.org/contact](https://www.balladbydragons.org/contact)
 * **GitHub**: [@balladbydragons](https://github.com/balladbydragons)
