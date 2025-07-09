@@ -1,5 +1,5 @@
 # Active Directory User Creation Script
-   By Helen Najar, Lionheart | Ballad by Dragons
+   By Helen Najar, Lionheart | Ballad by Lionheart
 
 ## Overview
 
@@ -114,13 +114,13 @@ Feel free to open issues or submit pull requests for enhancements or bug fixes.
 
 ## 📜 License
 
-This project is licensed under the [MIT License](https://github.com/balladbydragons/ActiveDirectory-Automation/blob/main/LICENSE.md).
+This project is licensed under the [MIT License](https://github.com/balladbylionheart/ActiveDirectory-Automation/blob/main/LICENSE.md).
 
-Created and maintained by Helen Najar | Lionheart | [BalladByDragons.org](https://www.balladbydragons.org)
+Created and maintained by Helen Najar | Lionheart | [balladbylionheart.com](https://www.balladbylionheart.com)
 
 
 ## **Contact**
 
 For questions, enhancements, or feedback:
-📬 [Main README](https://github.com/balladbydragons/ActiveDirectory-Automation/blob/main/README.md)
+📬 [Main README](https://github.com/balladbylionheart/ActiveDirectory-Automation/blob/main/README.md)
 

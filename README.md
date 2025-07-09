@@ -1,5 +1,5 @@
 # PowerShell Scripts  
-By Helen Najar, Lionheart | Ballad by Dragons
+By Helen Najar, Lionheart | Ballad by Lionheart
 
 The **ActiveDirectory-Automation** repository contains modular PowerShell scripts for managing on-premises **Active Directory**. These tools help automate user provisioning, streamline account creation, and enable secure, auditable **account termination**.
 
@@ -56,14 +56,14 @@ A clean, on-premises–focused termination script that handles:
 
 This scroll is ideal for non-hybrid environments or where mailbox offboarding is managed elsewhere.
 
-> 🔁 Hybrid termination scripts are housed in the [`Exchange-Hybrid-Tools`](https://github.com/balladbydragons/Exchange-Hybrid-Tools) repository.
+> 🔁 Hybrid termination scripts are housed in the [`Exchange-Hybrid-Tools`](https://github.com/balladbylionheart/Exchange-Hybrid-Tools) repository.
 
 ## 🛠️ How to Use
 
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/balladbydragons/ActiveDirectory-Automation.git
+   git clone https://github.com/balladbylionheart/ActiveDirectory-Automation.git
    cd ActiveDirectory-Automation
    ```
 
@@ -101,13 +101,13 @@ Install-Module -Name ActiveDirectory
 ```
 ## 📜 License
 
-Licensed under the [MIT License](https://github.com/balladbydragons/ActiveDirectory-Automation/blob/main/LICENSE.md).
+Licensed under the [MIT License](https://github.com/balladbylionheart/ActiveDirectory-Automation/blob/main/LICENSE.md).
 
-Created and maintained by Helen Najar | Lionheart | [BalladByDragons.org](https://www.balladbydragons.org)
+Created and maintained by Helen Najar | Lionheart | [BalladByLionheart.com](https://www.balladbylionheart.com)
 
 ## 📬 Contact
 For questions, requests, or collaboration:
 
 * **LinkedIn**: [Helen Najar](https://www.linkedin.com/in/helen-najar)
-* **Website**: [balladbydragons.org/contact](https://www.balladbydragons.org/contact)
-* **GitHub**: [@balladbydragons](https://github.com/balladbydragons)
+* **Website**: [balladbylionheart.com/contact](https://www.balladbylionheart.com/contact)
+* **GitHub**: [@balladbylionheart](https://github.com/balladbylionheart)

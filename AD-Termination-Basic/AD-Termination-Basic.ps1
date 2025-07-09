@@ -1,6 +1,6 @@
 ################################################################################
 # Script: AD-Termination-Basic.ps1
-# Author: Helen Najar, Lionheart | Ballad by Dragons
+# Author: Helen Najar, Lionheart | Ballad by Lionheart
 # Description: Active Directory-only termination script (no Exchange/Hybrid steps)
 # Date: 2025-05-19
 ################################################################################
